@@ -1,0 +1,12 @@
+#logo img {
+
+	max-height: 3em;
+	width: 100%;
+}
+
+svg {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
