@@ -6,9 +6,19 @@
 	
 	<title>Mazani Travel</title>
 	<meta charset="UTF-8">
+	<title> Mazani Travel | Experience Everything South America </title>
 	<meta name="description" content="Travel to South America">
-	<meta name="keywords" content="Travel, South, America, Vacation">
+	<meta name="keywords" content="Travel, South, America, Vacation, All-Inclusive">
 	<meta name="author" content="Veronica Rivera">
+	
+	<!-- Mobile & Responsive Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="img/favicon.ico">
 
 	<!-- Normalize CSS Reset -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"> 
@@ -24,34 +34,53 @@
 <body>
 
 	<header>
+	
+		<div id="mainheader" class="container">
 
-		<div id="logo"><img src="img/logo_large.svg" alt="large logo"></div>
+			<div id="logo"><a href="index.html"><img src="img/logo_large.svg" alt="large logo"></a></div>
+			
+			<div id="navigation">	
+			
+				<nav id="membernav">
+					
+					<ul>
+						<li><a href="#signup">Sign Up!</a></li>
+						<li><a href="#login">Log In</a><li>
+					</ul>
+				
+				</nav>
+				
+				<nav id="mainnav">
+
+					<ul>
+						<li><a href="#booking">Book</a></li>
+						<li><a href="#">Specials</a></li>
+						<li><a href="#destinations">Destinations</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+
+				</nav>
+
+			</div>
 		
-		<nav id="mainnav">
-
-			<ul>
-				<li><a href="#booking">Book</a></li>
-				<li><a href="#">Specials</a></li>
-				<li><a href="#destinations">Destinations</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">FAQ</a></li>
-			</ul>
-
-		</nav>
-
-		<div id="landing">
-			<h1>Main Offer</h1>
-			<h2>Description Goes Here</h2>
-			<p class="price">Price Goes Here <a href="#" class="ctabutton">Book Now!</a></p>
+			
 		</div>
 
 	</header>
+	
+	<div id="landing">
+	
+		<div id="offer" class="container">
+			<h1>Brazillian Adventure</h1>
+			<h2>Save 15% on your trip to Brazil</h2>
+			<a href="#">Book Now!</a><a href="#">Learn More</a>
+			<p>Book by 7/4/2015</p>
+		</div>
+	
+	</div>
 
-	<div id="booking">Book</div>
-
-	<div id="destinations"></div>
-
-	<footer>
+	<footer class="container">
 
 		<nav id="socialnav">
 
