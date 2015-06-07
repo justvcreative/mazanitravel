@@ -21,12 +21,39 @@ a:link {
 
 */
 
+/* -------- Buttons -------- */
+
+	.ctabtn {
+	  border-radius: 5px;
+	  color: #F1F1F2;
+	  font-weight: 700;
+	  background: #8CC63E;
+	  padding: 10px 20px 10px 20px;
+	}
+
+	.ctabtn:hover {
+	  background: #BADD8B;
+	}
+	
+	.greenbtn {
+	  border-radius: 5px;
+	  color: #8CC63E;
+	  font-weight: 700;
+	  padding: 10px 20px 10px 20px;
+	  border: solid #8CC63E 2px;
+	  text-decoration: none;
+	}
+
 /* --------Fonts-------- */
 
-	/* PT Sans Regular & Bold: Google WebFonts */
+	/* Handlee, PT Sans Regular & Bold: Google WebFonts */
 	
 	body {
 		font-family: 'PT Sans', Helvetica, Futura, sans-serif;
+	}
+	
+	h1 {
+		font-family: 'Handlee', cursive; 
 	}
 
 /* Navigation */
@@ -99,15 +126,35 @@ a:link {
 /* -------- Hero -------- */
 
 	#landing {
-		height: 1050px;
-		background: aqua url('.../img/hero.jpg') no-repeat;
+		position: relative;
+		bottom: 5em;
+		height: 900px;
+		background: linear-gradient(#27A9E1, transparent 90%),
+					#27A9E1 url('../img/hero.jpg') no-repeat top center;
+		background-size: cover;
+		z-index: -1;
 	}
+	
 	#offer {
+		position: relative;
+		top: 30%;
 		text-align: center;
 	}
 	
 	#offer h1 {
-		margin: 0;
+		color: #F1F1F2;
+		font-size: 7em;
+		letter-spacing: 0.125em;
+	}
+	
+	#offer h2 {
+		color: #F1F1F2;
+		font-size: 2em;
+	}
+	
+	#offer p {
+		padding: 1em;
+		color: #F1F1F2;
 	}
 
 /* -------- Booking -------- */
