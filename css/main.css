@@ -24,7 +24,7 @@ a:link {
 /* -------- Buttons -------- */
 
 	.ctabtn {
-	  border-radius: 5px;
+	  border-radius: .35em;
 	  color: #F1F1F2;
 	  font-weight: 700;
 	  background: #8CC63E;
@@ -36,12 +36,17 @@ a:link {
 	}
 	
 	.greenbtn {
-	  border-radius: 5px;
+	  border-radius: .35em;
 	  color: #8CC63E;
 	  font-weight: 700;
 	  padding: 10px 20px 10px 20px;
 	  border: solid #8CC63E 2px;
 	  text-decoration: none;
+	}
+	
+	.greenbtn:hover {
+		color: #BADD8B;
+		border: solid #BADD8B 2px;
 	}
 
 /* --------Fonts-------- */
@@ -62,7 +67,7 @@ a:link {
 		position: relative;
 		max-width: 65%;
 		float: right;
-		bottom: 4.5em;
+		bottom: 3.75em;
 		text-align: right;
 	}
 
@@ -92,6 +97,9 @@ a:link {
 	}
 	
 	/* Member Nav */
+	#membernav {
+		padding-bottom: .5em;
+	}
 	
 	#membernav ul li{
 		padding-right: .75em;
@@ -106,7 +114,7 @@ a:link {
 	
 	/* Social Nav */
 
-/* --------Header-------- */
+/* -------- Main Header-------- */
 
 	header {
 		background: #F1F1F2;
@@ -114,6 +122,8 @@ a:link {
 		-webkit-box-shadow: 0px 3px 5px 0px rgba(109,110,112,1);
 		-moz-box-shadow: 0px 3px 5px 0px rgba(109,110,112,1);
 		box-shadow: 0px 3px 5px 0px rgba(109,110,112,1);
+		z-index: 1;
+		position: relative;
 	}
 
 	/* Logo */
@@ -122,43 +132,56 @@ a:link {
 		padding-top: 1.5em;
 	}
 	
+	/* Section Headers */
+	
+	.sectionHeader {
+		background: #8CC63E;
+		padding: 1.5em 0;
+		color: #F1F1F2;
+	}
 
 /* -------- Hero -------- */
 
 	#landing {
-		position: relative;
-		bottom: 5em;
 		height: 900px;
-		background: linear-gradient(#27A9E1, transparent 90%),
+		background: linear-gradient(#27A9E1, transparent 100%),
 					#27A9E1 url('../img/hero.jpg') no-repeat top center;
 		background-size: cover;
-		z-index: -1;
 	}
 	
 	#offer {
-		position: relative;
-		top: 30%;
 		text-align: center;
 	}
 	
 	#offer h1 {
-		color: #F1F1F2;
 		font-size: 7em;
-		letter-spacing: 0.125em;
 	}
 	
 	#offer h2 {
-		color: #F1F1F2;
 		font-size: 2em;
 	}
 	
+	#offerButtons {
+		padding-top: 2em;
+	}
+	
+	#offer h1,
+	#offer h2,
 	#offer p {
-		padding: 1em;
+		padding-top: 2em;
 		color: #F1F1F2;
 	}
 
 /* -------- Booking -------- */
 
+	#bookForm {
+		background: #F1F1F2;
+		padding: 2em 0;
+	}
+	
+	#bookForm label {
+		color: #404041;
+	}
 	
 
 /* -------- Destinations -------- */

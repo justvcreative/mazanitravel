@@ -20,15 +20,15 @@
 	
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="img/favicon.ico">
-
-	<!-- Normalize CSS Reset -->
-	<link rel="stylesheet" type="text/css" href="css/normalize.css"> 
-
-	<!-- Main CSS -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<!-- CSS Reset by HTML5 Doctor -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 
 	<!-- Font Awesome Stylesheet -->
-	<link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css">
+	
+	<!-- Main CSS -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 
@@ -75,13 +75,61 @@
 		<div id="offer" class="container">
 			<h1>Brazillian Adventure</h1>
 			<h2>Save 15% on your trip to Brazil</h2>
-			<a href="#" class="ctabtn">Book Now!</a>
-			<a href="#" class="greenbtn">Learn More</a>
+			<div id="offerButtons">
+				<a href="#" class="ctabtn">Book Now!</a>
+				<a href="#" class="greenbtn">Learn More</a>
+			</div>
 			<p>Book by 7/4/2015</p>
 		</div>
 	
 	</div>
+	
+	<div id="booking" class="sectionHeader">
+		<div class="container"><h2>Book Your Adventure Here!</h2></div>
+		<div id="bookForm">
+		
+			<form class="container">
+				
+				<label for="departCity">Departure City</label>
+				<input type="text" id="departCity" name="depart_city">
+				<label for="arriveCity">Arrival City</label>
+				<input type="text" id="arriveCity" name="arrive_city">
+				
+				<label for="adults">Adults</label>
+				<select id="adults" name="age_adult">
+					<option>0</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+				
+				<label for="departDate">Departure Date</label>
+				<input type="date" id="departDate" name="depart_date">
+				<label for="arriveDate">Arrival Date</label>
+				<input type="date" id="arriveDate" name="arrive_date">
+				
+				<label for="seniors">Seniors</label>
+				<select id="seniors" name="age_seniors">
+					<option>0</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+				
+				<button type="submit">Search</button>
+				
+				
+			</form>
+			
+		</div>
+	</div>
 
+	<div id="destinations" class="sectionHeader">
+		<div class="container"><h2>Where Will You Venture Next?</h2></div>
+	</div>
+	
 	<footer class="container">
 
 		<nav id="socialnav">
