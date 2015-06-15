@@ -88,26 +88,26 @@
 		<div class="container"><h2>Book Your Adventure Here!</h2></div>
 		<div id="bookForm">
 		
-			<form class="container">
+			<form action="index.html" method="post" class="container">
 				
 				<label for="departCity">Departure City</label>
 				<input type="text" id="departCity" name="depart_city">
 				<label for="arriveCity">Arrival City</label>
 				<input type="text" id="arriveCity" name="arrive_city">
 				
-				<label for="adults">Adults</label>
-				<select id="adults" name="age_adult">
-					<option>0</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-				</select>
-				
 				<label for="departDate">Departure Date</label>
 				<input type="date" id="departDate" name="depart_date">
 				<label for="arriveDate">Arrival Date</label>
 				<input type="date" id="arriveDate" name="arrive_date">
+				
+				<label for="adults">Adults</label>
+				<select id="adults" name="age_adult">
+					<option>0</option>
+					<option selected>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
 				
 				<label for="seniors">Seniors</label>
 				<select id="seniors" name="age_seniors">
@@ -118,7 +118,7 @@
 					<option>4</option>
 				</select>
 				
-				<button type="submit">Search</button>
+				<button type="submit">Submit</button>
 				
 				
 			</form>
