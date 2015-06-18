@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
-	
+
 	<title>Mazani Travel</title>
 	<meta charset="UTF-8">
 	<title> Mazani Travel | Experience Everything South America </title>
@@ -29,6 +29,11 @@
 	
 	<!-- Main CSS -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 
 </head>
 
@@ -89,36 +94,36 @@
 		<div id="bookForm">
 		
 			<form action="index.html" method="post" class="container">
-				
-				<label for="departCity">Departure City</label>
-				<input type="text" id="departCity" name="depart_city">
-				<label for="arriveCity">Arrival City</label>
-				<input type="text" id="arriveCity" name="arrive_city">
-				
-				<label for="departDate">Departure Date</label>
-				<input type="date" id="departDate" name="depart_date">
-				<label for="arriveDate">Arrival Date</label>
-				<input type="date" id="arriveDate" name="arrive_date">
-				
-				<label for="adults">Adults</label>
-				<select id="adults" name="age_adult">
-					<option>0</option>
-					<option selected>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-				</select>
-				
-				<label for="seniors">Seniors</label>
-				<select id="seniors" name="age_seniors">
-					<option>0</option>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-				</select>
-				
-				<button type="submit">Submit</button>
+		
+			<span><label for="departCity">Departure City</label>
+				<input type="text" id="departCity" name="depart_city"></span>
+			<span><label for="arriveCity">Arrival City</label>
+				<input type="text" id="arriveCity" name="arrive_city"></span>
+
+			<span><label for="departDate">Departure Date</label>
+			  <input id="departDate" class="datepicker" name="depart_date"></span>
+			<span><label for="arriveDate">Arrival Date</label>
+			  <input id="arriveDate" class="datepicker" name="arrive_date"></span>
+
+			<span><label for="adults">Adults</label>
+			  <select id="adults" name="age_adult">
+				<option>0</option>
+				<option selected>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				</select></span>
+
+			<span><label for="seniors">Seniors</label>
+			  <select id="seniors" name="age_seniors">
+				<option>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				</select></span>
+
+			  <button type="submit">Submit</button>
 				
 				
 			</form>
@@ -143,9 +148,6 @@
 		</nav>
 
 	</footer>
-
-
-
 
 </body>
 
