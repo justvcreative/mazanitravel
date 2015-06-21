@@ -195,7 +195,6 @@ a:link {
 	  border-radius: .35em;
 	  padding: 1em;
 	  margin-right: 1em;
-	  margin-bottom: 1em;
 	}
 
 	#bookForm span select {
@@ -217,6 +216,27 @@ a:link {
 	
 	#bookForm button:hover {
 		background: #BADD8B;
+	}
+	
+	/* Datepicker UI */
+	
+	.ui-datepicker {
+		font-family: 'PT Sans', Helvetica, Futura, sans-serif;
+	}
+	
+	.ui-widget-header {
+		background: #F1F1F2;
+	}
+	
+	.ui-datepicker .ui-datepicker-title,
+	.ui-datepicker .ui-datepicker-header,
+	.ui-datepicker .ui-datepicker-prev,
+	.ui-datepicker .ui-datepicker-next {
+		background: #27A9E1;
+	}
+	
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+		background: #F1F1F2;
 	}
 
 /* -------- Destinations -------- */
