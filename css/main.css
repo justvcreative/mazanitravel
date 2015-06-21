@@ -238,6 +238,10 @@ a:link {
 	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
 		background: #F1F1F2;
 	}
+	
+	.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+		border: 1px solid #F7931D;
+	}
 
 /* -------- Destinations -------- */
 
