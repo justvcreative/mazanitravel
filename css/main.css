@@ -190,18 +190,22 @@ a:link {
 	  color: #404041;
 	}
 
-	#bookForm span input {
-	  border: 1px solid lightgrey;
-	  border-radius: .35em;
-	  padding: 1em;
-	  margin-right: 1em;
+	#bookForm span input,
+	#bookForm span select {
+		border: 1px solid #F7931D;
+		padding: 1.125em;
+		border-radius: .35em;
+		background: white;
+		font-size: .75em;
+		margin-right: 25%;
 	}
 
 	#bookForm span select {
-	  padding: 1em;
-	  margin-right: 1em;
-	  border: 1px solid lightgrey;
-	  border-radius: .35em;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  height: 100%;
+	  background: white url('../img/selectarrows.png') no-repeat right;
+	  min-width: 100%;
 	}
 
 	#bookForm button {
