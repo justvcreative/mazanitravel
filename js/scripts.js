@@ -1,4 +1,2 @@
-//JQuery UI
-  $(document).ready(function() {
-    $(".datepicker").datepicker();
-  });
+//JQuery UI: Datepicker
+$(".datepicker").datepicker();
