@@ -92,9 +92,12 @@
 	
 	<div id="booking" class="sectionHeader">
 		<div class="container"><h2>Book Your Adventure Here!</h2></div>
+	</div>	
+
 		<div id="bookForm">
 		
 			<form action="index.html" method="post" class="container">
+		
 		
 			<span><label for="departCity">Departure City</label>
 				<input type="text" id="departCity" name="depart_city" placeholder="Departure City"></span>
@@ -109,12 +112,16 @@
 					<option value="barcelona">Barcelona, Venezuela</option>
 
 				</select></span>
+		</fieldset>
 
+		
 			<span><label for="departDate">Departure Date</label>
 			  <input id="departDate" class="datepicker" name="depart_date" placeholder="MM/DD/YY"></span>
 			<span><label for="arriveDate">Arrival Date</label>
 			  <input id="arriveDate" class="datepicker" name="arrive_date" placeholder="MM/DD/YY"></span>
+		</fieldset>
 
+		
 			<span><label for="adults">Adults</label>
 				<select id="adults" name="age_adult">
 					<option value="0">0</option>
@@ -125,23 +132,26 @@
 				</select></span>
 
 			<span><label for="seniors">Seniors</label>
-			  <select id="seniors" name="age_seniors">
+			 <select id="seniors" name="age_seniors">
 				<option value="0">0</option>
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
 				<option value="4">4</option>
-				</select></span>
-
-			  <button type="submit">Submit</button>
-				
+			</select></span>
+		</fieldset>
+			
+			<div id="bookButtons">
+			  <button type="submit" value="Submit" class="submitButton">Submit</button>
+			  <button type="reset" value="reset" class="resetButton">Reset</button>
+			</div>
 				
 			</form>
 			
 		</div>
-	</div>
+	
 
-	<div id="destinations" class="sectionHeader">
+	<div id="destinations" class="sectionHeader clearfix">
 		<div class="container"><h2>Where Will You Venture Next?</h2></div>
 	</div>
 
