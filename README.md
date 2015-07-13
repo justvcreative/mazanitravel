@@ -1,13 +1,13 @@
-This is a project for Code Louisville for the Front End Developement Track.
+This is a project for Code Louisville for the Front End Development Track.
 
 Mazani Travel is a Travel Agency that provides all inclusive vacation packages to South America. Countries include:
 Chile, Argentina, Puerto Rico, Brazil, Peru, & Venezuela.
 
 List of Cities to choose from:
 
-Chile: Santiago
-Argentina: Buenes Aires
-Puerto Rico: San Juan
-Brazil: Rio de Janeiro
-Peru: Lima
-Venezuela: Barcelona
+Santiago, Chile;
+Buenes Aires,Argentina;
+San Juan, Puerto Rico;
+Rio de Janeiro, Brazil;
+Lima, Peru;
+Barcelona, Venezuela;
