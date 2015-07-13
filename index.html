@@ -94,11 +94,11 @@
 		<div class="container"><h2>Book Your Adventure Here!</h2></div>
 	</div>	
 
-		<div id="bookForm">
+		<div id="bookForm" class="container">
 		
-			<form action="index.html" method="post" class="container">
+			<form action="index.html" method="post">
 		
-		
+			<fieldset>
 			<span><label for="departCity">Departure City</label>
 				<input type="text" id="departCity" name="depart_city" placeholder="Departure City"></span>
 			<span><label for="arriveCity">Arrival City</label>
@@ -112,16 +112,16 @@
 					<option value="barcelona">Barcelona, Venezuela</option>
 
 				</select></span>
-		</fieldset>
+			</fieldset>
 
-		
+		<fieldset>
 			<span><label for="departDate">Departure Date</label>
 			  <input id="departDate" class="datepicker" name="depart_date" placeholder="MM/DD/YY"></span>
-			<span><label for="arriveDate">Arrival Date</label>
-			  <input id="arriveDate" class="datepicker" name="arrive_date" placeholder="MM/DD/YY"></span>
+			<span><label for="returnDate">Return Date</label>
+			  <input id="returnDate" class="datepicker" name="return_date" placeholder="MM/DD/YY"></span>
 		</fieldset>
 
-		
+		<fieldset>
 			<span><label for="adults">Adults</label>
 				<select id="adults" name="age_adult">
 					<option value="0">0</option>
@@ -148,6 +148,7 @@
 				
 			</form>
 			
+			<div id="ad"><a href="#"><img src="img/300ad.jpg" alt="You Can Either Pick Your Feet Up On The Couch or On The Beach!"></a></div>
 		</div>
 	
 
