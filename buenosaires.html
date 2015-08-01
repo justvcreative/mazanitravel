@@ -7,7 +7,6 @@
 		<meta name="keywords" content="Travel, South, America, Vacation, All-Inclusive">
 		<meta name="author" content="Veronica Rivera">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
 	<!-- Google Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
@@ -17,14 +16,10 @@
 		<link rel="icon" type="image/png" href="img/favicon.ico">
 	<!-- Bootstrap CSS -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
-	<!-- CSS Reset by HTML5 Doctor -->
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<!-- Main CSS -->
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-
+		<link rel="stylesheet" type="text/css" href="css/main.min.css">
 	</head>
 	<body>
-
 		<!-- Header -->
 		<header class="navbar navbar-default clearfix">
 			<div class="container">
@@ -43,10 +38,8 @@
 							<li><a href="#">FAQ</a></li>
 						</ul>
 					</nav>
-
 					<nav id="mobilenav">
 						<a href="#" id="switch"><i class="fa fa-bars"></i></a>
-
 						<ul id="navlist" class="nav">
 							<li><a href="#booking">Book</a></li>
 							<li><a href="#">Specials</a></li>
@@ -58,7 +51,7 @@
 				</div>
 			</div>
 		</header>
-
+		<!-- Content -->
 		<div id="info">
 			<div class="container">
 				<h1>Buenos Aires, Argentina</h1>
@@ -119,14 +112,6 @@
 				</div>
 			</div>
 		</div>
-
-
-	
-
-
-
-
-
 	<!-- Booking -->
 		<div id="booking" class="sectionHeader">
 			<h2>Book Your Adventure Here!</h2>
@@ -136,66 +121,62 @@
 				<div id="bookingSection" class="row">
 							<div class="col-sm-8">
 								<form id="bookForm" class="form-inline">
-									<div class="form-group">
-										<fieldset>
-										<span><label for="departCity">Departure City</label>
-										<input type="text" id="departCity" name="depart_city" placeholder="Departure City" class="form-control input-lg"></span>
-									</div>
-									<div class="form-group">
-										<span><label for="arriveCity">Arrival City</label>
-											<select id="arriveCity" name="arrive_city" placeholder="Arrival City" class="form-control input-lg">
-												
-												<option value="Santiago, Chile">Santiago, Chile</option>
-												<option value="Buenos Aires, Argentina">Buenos Aires, Argentina</option>
-												<option value="San Juan, Puerto Rico">San Juan, Puerto Rico</option>
-												<option value="San Juan, Puerto Rico">Rio de Janeiro, Brazil</option>
-												<option value="Lima, Peru">Lima, Peru</option>
-												<option value="Barcelona, Venezuela">Barcelona, Venezuela</option>
-			
+									<fieldset>
+										<div class="form-group">
+											<span><label for="departCity">Departure City</label>
+											<input type="text" id="departCity" name="depart_city" placeholder="Departure City" class="form-control input-lg"></span>
+										</div>
+										<div class="form-group">
+											<span><label for="arriveCity">Arrival City</label>
+												<select id="arriveCity" name="arrive_city" placeholder="Arrival City" class="form-control input-lg">
+													<option value="Santiago, Chile">Santiago, Chile</option>
+													<option value="Buenos Aires, Argentina">Buenos Aires, Argentina</option>
+													<option value="San Juan, Puerto Rico">San Juan, Puerto Rico</option>
+													<option value="San Juan, Puerto Rico">Rio de Janeiro, Brazil</option>
+													<option value="Lima, Peru">Lima, Peru</option>
+													<option value="Barcelona, Venezuela">Barcelona, Venezuela</option>
+												</select></span>
+										</div>
+									</fieldset>
+										<br>
+									<fieldset>
+										<div class="form-group">
+											<span><label for="departDate">Departure Date</label>
+											<input id="departDate" class="datepicker form-control input-lg" name="depart_date" placeholder="MM/DD/YY"></span>
+										</div>
+										<div class="form-group">
+											<span><label for="returnDate">Return Date</label>
+											<input id="returnDate" class="datepicker form-control input-lg" name="return_date" placeholder="MM/DD/YY"></span>
+											</div>
+									</fieldset>
+									<fieldset>
+										<div class="form-group">
+											<span><label for="adults">Adults</label>
+											<select id="adults" name="age_adult" class="form-control input-lg">
+												<option value="0">0</option>
+												<option value="1" selected>1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
 											</select></span>
-										</fieldset>
-									</div>
-									<br>
-									<div class="form-group">
-										<fieldset>
-										<span><label for="departDate">Departure Date</label>
-							  			<input id="departDate" class="datepicker form-control input-lg" name="depart_date" placeholder="MM/DD/YY"></span>
-									</div>
-									<div class="form-group">
-										<span><label for="returnDate">Return Date</label>
-						  				<input id="returnDate" class="datepicker form-control input-lg" name="return_date" placeholder="MM/DD/YY"></span>
-						  				</fieldset>
-									</div>
-									<div class="form-group">
-										<fieldset>
-										<span><label for="adults">Adults</label>
-										<select id="adults" name="age_adult" class="form-control input-lg">
-											<option value="0">0</option>
-											<option value="1" selected>1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-										</select></span>
-									</div>
-									<div class="form-group">
-										<span><label for="seniors">Seniors</label>
-										 <select id="seniors" name="age_seniors" class="form-control input-lg">
-											<option value="0">0</option>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-										</select></span>
-										</fieldset>
-									</div>
-			
+										</div>
+										<div class="form-group">
+											<span><label for="seniors">Seniors</label>
+											 <select id="seniors" name="age_seniors" class="form-control input-lg">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+											</select></span>
+										</div>
+									</fieldset>
 									<div id="bookButtons">
 									  <button type="submit" value="Submit" class="btn btn-primary btn-lg">Submit</button>
 									  <button type="reset" value="reset" class="btn btn-default btn-lg">Reset</button>
 									</div>
 								</form>
 							</div>
-
 					<!-- Ad -->
 					<div class="col-sm-4">
 						<div id="ad" class="hidden-xs">
@@ -205,7 +186,6 @@
 				</div>
 				<div id="confirm" class="container"></div>
 			</div>
-
 	<!-- Footer -->
 		<footer> 
 			<div class="container">
@@ -240,7 +220,6 @@
 				</div>
 			</div>
 		</footer>
-
 	<!-- JQuery CDN -->
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -250,6 +229,6 @@
 	<!-- Bootstrap Javascript -->
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<!-- Custom Javascript -->
-		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/scripts.min.js"></script>
 	</body>
 </html>
