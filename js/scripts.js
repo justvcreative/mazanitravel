@@ -1,31 +1,52 @@
 //JQuery UI: Datepicker
-$(".datepicker").datepicker();
+	$(".datepicker").datepicker();
 
 //Booking Form
-	//Departure City: Retrieve User Input
-	//Arrival City: User Selects from List
-		//Cost of Trip is based on User's selection of the Arrival City
-	//Departure Date: User Selects the day they wish to travel
-		//Trips are a minimum of 4 days
-	//Adults: User selects the amount of adults. 1 is the default
-	//Seniors: Optional. User selects the amount of seniors.
-		//Seniors get 10% discount off the Cost of Trip
-	//Submit
+	$('#confirm').hide(); // Hide Confirm Section
 	$('#bookForm').submit( function ( submit ) {
-		submit.preventDefault();
-		console.log($('#departCity').attr('value'));
-		console.log($('#arriveCity').attr('value'));
-		console.log($('#departDate').attr('value'));
-		console.log($('#returnDate').attr('value'));
-		console.log($('#adults').attr('value'));
-		console.log($('#seniors').attr('value'));
-	});
-		//Add a Lightbox Overlay displaying data inserted by User
-			//Confirm
-				//Thank you Message appears
-			//Cancel
-				//User is directed back to the form and overlay is removed
-		
+			submit.preventDefault(); // Prevents Default refreshing of the page
+			// store user input values in variables
+			var departcity = $('#departCity').attr('value'); // store Depart City in
+			var destination = $('#arriveCity').attr('value'); // store Destination/Arrive City
+			var departdate = $('#departDate').attr('value'); // store Depart Date
+			var returndate = $('#returnDate').attr('value'); // store Return Date
+			var adults = $('#adults').attr('value'); // store Amount of Adults
+			var seniors = $('#seniors').attr('value'); // store Amount of Seniors
+			$('#confirm').show(); // Show Confirm Section
+
+			$('#confirm').html( 
+				//Add following html markup and displays data stored in variables
+				'<hr>' +
+				'<h2>Your Next Adventure Awaits!</h2>' +
+				'<h3>Please Confirm your Package</h3>' +
+				'<div class="row">' +
+					'<div class="col-sm-6">' +
+						'<h4>Departure City</h4>'+
+						'<p>' + departcity +' </p>' + // display Return Date
+						'<h4>Arrival City</h4>' +
+						'<p>Destination: ' + destination + '</p></div>' + // display Destination/Arrival City
+					'<div class="col-sm-6">' +
+						'<h4>Departure date</h4>' +
+						'<p>' + departdate + '</p>' + // display Depart Date
+						'<h4>Return Date</h4>' +
+						'<p>' + returndate + '</p>'+ // display Return Date
+						'<h4>Travelers</h4>' +
+						'<p>Adults: ' + adults + ' | Seniors: ' + seniors + '</p></div></div>' +			
+				'<div id="confirmationButtons"><button type="button" id="confirmButton" class="btn btn-primary btn-lg">Confirm</button>' +
+				'<button type="button" id="cancelButton" class="btn btn-default btn-lg">Cancel</button></div><hr>' // Confirmation Buttons
+				);
+
+					$('#confirmButton').click(function () {
+						$('#confirmationButtons button').hide(); // Confirmation Buttons are removed
+						$('#confirm').append(
+								'<h2 style="color: #8DC63F">Thank You For booking your Adventure to<br>' +
+								destination + '!</h2>'); // Thank You Message Appears
+					});
+					$('#cancelButton').click(function () {
+						$('#confirm').hide(); // Hide Confirm Section
+					});
+		});
+
 //Mobile Navigation
 	//Mobile Nav Menu hidden on load
 	$('#navlist').hide();
