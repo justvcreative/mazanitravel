@@ -10,12 +10,12 @@
 	<!-- Google Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
-	<!-- Font Awesome Stylesheet -->
-		<link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css">
+	<!-- Font Awesome Stylesheet CDN -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- Favicon -->
 		<link rel="icon" type="image/png" href="img/favicon.ico">
-	<!-- Bootstrap CSS -->
-		<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<!-- Bootstrap CSS CDN -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!-- Main CSS -->
 		<link rel="stylesheet" type="text/css" href="css/main.min.css">
 	</head>
@@ -38,7 +38,7 @@
 							<li><a href="#">FAQ</a></li>
 						</ul>
 					</nav>
-					<nav id="mobilenav">
+					<nav id="mobilenav" class="hidden-sm hidden-md hidden-lg">
 						<a href="#" id="switch"><i class="fa fa-bars"></i></a>
 
 						<ul id="navlist" class="nav">
@@ -143,7 +143,7 @@
 			<hr>
 			<h2>Where Will You Venture Next?</h2>
 			<!-- Gallery -->
-			<div id="destinationsGallery">
+			<div id="destinationsGallery" class="hidden-xs">
 				<div class="row">
 					<div class="photo col-sm-4"><h2 class="caption">Chile</h2><a href="chile.html"><img src="img/santiago.jpg" alt="Santiago, Chile" class="img-responsive"></a></div>
 					<div class="photo col-sm-4"><h2 class="caption">Argentina</h2><a href="buenosaires.html"><img src="img/buenosaires.jpg" alt="Buenos Aires, Argentina" class="img-responsive"></a></div>
@@ -155,6 +155,18 @@
 					<div class="photo col-sm-4"><h2 class="caption">Venezuela</h2><a href="barcelona.html"><img src="img/barcelona.jpg" alt="Barcelona, Venezuela<" class="img-responsive"></a></div>
 				</div>
 			</div>
+			<div id="desinationsLinks" class="hidden-sm hidden-md hidden-lg">
+					<nav>
+						<ul id="destinationList">
+							<li><a href="chile.html">Chile</a></li>
+							<li><a href="buenosaires.html" class="active">Argentina</a></li>
+							<li><a href="sanjuan.html">Puerto Rico</a></li>
+							<li><a href="riodejaneiro.html">Brazil</a></li>
+							<li><a href="lima.html">Peru</a></li>
+							<li><a href="barcelona.html">Venezuela</a></li>
+						</ul>
+					</nav>
+				</div>
 		</div>
 		<!-- Footer -->
 		<footer> 
@@ -192,12 +204,11 @@
 		</footer>
 	<!-- JQuery CDN -->
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<!-- JQuer UI for Datepicker CDN -->
 		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-	<!-- Bootstrap Javascript -->
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap Javascript CDN -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!-- Custom Javascript -->
 		<script type="text/javascript" src="js/scripts.min.js"></script>
 	</body>

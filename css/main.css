@@ -242,6 +242,7 @@ input, select {
 
 	#desinationsLinks ul li {
 		display: inline-block;
+		margin-top: 1.5em;
 	}
 
 	#desinationsLinks ul li a {
@@ -435,6 +436,10 @@ input, select {
 		margin: 1em auto 0;
 	}
 
+	.sectionHeader {
+		margin: 0 1em;
+	}
+
 	/* Navigation */
 
 	#mobilenav ul li {
@@ -457,6 +462,12 @@ input, select {
 
 	#footernav ul li {
 		padding: .5em 1em;
+	}
+
+	#desinationsLinks ul li {
+		display: block;
+		margin-top: 1em;
+		font-size: 1.5em;
 	}
 
 	/* Destinations */
@@ -490,12 +501,6 @@ input, select {
 
 	#credits h2, #credits p, #footernav h2{
 		margin: .5em 0;
-	}
-}
-
-@media only screen and ( min-width: 768px) {
-	#mobilenav {
-		display: none;
 	}
 }
 
