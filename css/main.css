@@ -243,10 +243,11 @@ input, select {
 	#desinationsLinks ul li {
 		display: inline-block;
 		margin-top: 1.5em;
+		font-size: 1.5em;
 	}
 
 	#desinationsLinks ul li a {
-		padding: 1em;
+		margin: 1em;
 		color: #414142;
 	}
 
@@ -412,7 +413,11 @@ input, select {
 		margin: 0 auto;
 	}
 
-	#infoContent, #infoContent h3, #infoContent ul {
+	#infoContent {
+		margin-top: 2em;
+	}
+
+	#infoContent h3, #infoContent ul {
 		margin: 1em 0 .5em;
 	}
 
@@ -456,7 +461,7 @@ input, select {
 		float: none !important;
 	}
 
-	#footernav, #socialnav {
+	#footernav, #socialnav, #funfacts, #attractions, #package {
 		margin-top: 1em;
 	}
 
@@ -466,8 +471,8 @@ input, select {
 
 	#desinationsLinks ul li {
 		display: block;
-		margin-top: 1em;
-		font-size: 1.5em;
+		padding: .5em;
+		margin: .25em;
 	}
 
 	/* Destinations */
@@ -495,7 +500,7 @@ input, select {
 		font-size: 1.125em;
 	}
 
-	#credits p {
+	#infoContent, #credits p {
 		padding: 0 1.5em;
 	}
 
