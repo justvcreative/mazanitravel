@@ -110,13 +110,6 @@ input, select {
 		color: #414142;
 	}
 
-/* ======== Typography ======== */
-
-	h1 {
-		font-family: 'Handlee', cursive; 
-	}
-
-
 /* ======== Header ======== */
 	header {
 		position: relative;
@@ -263,8 +256,7 @@ input, select {
 
 	.jumbotron {
 		height: 900px;
-		background: linear-gradient(#27A9E1 20%, rgba(247, 147, 29, 0.6)),
-					#27AAE1 url('../img/bg.jpg') top center no-repeat;
+		background: #414142 url('../img/bg.jpg') top center no-repeat;
 		text-align: center;
 		background-size: cover;
 		margin-bottom: 0;
@@ -473,6 +465,20 @@ input, select {
 		display: block;
 		padding: .5em;
 		margin: .25em;
+	}
+
+	/* Jumbotron */
+
+	.jumbotron {
+		height: 600px;
+	}
+
+	.jumbotron h1 {
+		font-size: 2em;
+	}
+
+	.jumbotron h2 {
+		font-size: 1.5em;
 	}
 
 	/* Destinations */
