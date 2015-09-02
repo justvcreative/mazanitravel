@@ -6,12 +6,12 @@
 	$('#bookForm').submit( function ( submit ) {
 			submit.preventDefault(); // Prevents Default refreshing of the page
 			// store user input values in variables
-			var departcity = $('#departCity').attr('value'); // store Depart City in
-			var destination = $('#arriveCity').attr('value'); // store Destination/Arrive City
-			var departdate = $('#departDate').attr('value'); // store Depart Date
-			var returndate = $('#returnDate').attr('value'); // store Return Date
-			var adults = $('#adults').attr('value'); // store Amount of Adults
-			var seniors = $('#seniors').attr('value'); // store Amount of Seniors
+			var departcity = $('#departCity').prop('value'); // store Depart City in
+			var destination = $('#arriveCity').prop('value'); // store Destination/Arrive City
+			var departdate = $('#departDate').prop('value'); // store Depart Date
+			var returndate = $('#returnDate').prop('value'); // store Return Date
+			var adults = $('#adults').prop('value'); // store Amount of Adults
+			var seniors = $('#seniors').prop('value'); // store Amount of Seniors
 			$('#confirm').show(); // Show Confirm Section
 
 			$('#confirm').html( 
