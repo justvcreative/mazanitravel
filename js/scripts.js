@@ -19,19 +19,18 @@
 				'<hr>' +
 				'<h2>Your Next Adventure Awaits!</h2>' +
 				'<h3>Please Confirm your Package</h3>' +
-				'<div class="row">' +
-					'<div class="col-sm-6">' +
+				'<div>' +
 						'<h4>Departure City</h4>'+
 						'<p>' + departcity +' </p>' + // display Return Date
-						'<h4>Arrival City</h4>' +
-						'<p>Destination: ' + destination + '</p></div>' + // display Destination/Arrival City
-					'<div class="col-sm-6">' +
+						'<h4>Destination</h4>' +
+						'<p>' + destination + ' </p>' + // display Destination/Arrival City
 						'<h4>Departure date</h4>' +
 						'<p>' + departdate + '</p>' + // display Depart Date
 						'<h4>Return Date</h4>' +
 						'<p>' + returndate + '</p>'+ // display Return Date
 						'<h4>Travelers</h4>' +
-						'<p>Adults: ' + adults + ' | Seniors: ' + seniors + '</p></div></div>' +			
+						'<p>Adults: ' + adults + ' | Seniors: ' + seniors + '</p>' +
+				'</div>' +			
 				'<div id="confirmationButtons"><button type="button" id="confirmButton" class="btn btn-primary btn-lg">Confirm</button>' +
 				'<button type="button" id="cancelButton" class="btn btn-default btn-lg">Cancel</button></div><hr>' // Confirmation Buttons
 				);

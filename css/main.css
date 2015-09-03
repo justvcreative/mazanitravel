@@ -331,11 +331,11 @@ input, select {
 	#confirm {
 		background: #fff;
 		margin: 2em 0;
+		text-align: center;
 	}
 
 	#confirm h2, #confirm h3 {
 		font-weight: 700;
-		text-align: center;
 		margin: .5em 0;
 	}
 
@@ -345,7 +345,6 @@ input, select {
 	}
 
 	#confirmationButtons {
-		text-align: center;
 		margin: 2em 0;
 	}
 
