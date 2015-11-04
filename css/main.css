@@ -260,14 +260,38 @@ input, select {
 		text-align: center;
 		background-size: cover;
 		margin-bottom: 0;
+		color: #404041;
 	}
 
 	.jumbotron h1 {
 		margin-top: 2em;
+		color: #404041;
 	}
 
 	.jumbotron h2, .jumbotron p {
 		margin: 1em;
+		color: #404041;
+	}
+
+	.jumbo-btn {
+		border: 1px solid #F7931D;
+		background: #F7931D;
+		color: #404041;
+	}
+
+	.jumbo-btn:hover {
+		background: #D47608;
+		color: #F1F1F2;
+	}
+
+	.jumbo-default-btn {
+		border: 1px solid #F7931D;
+		background: rgba(241, 241, 242, 0.9);
+		color: #404041;
+	}
+
+	.jumbo-default-btn:hover {
+		background: rgba(215, 215, 217, 0.9);
 	}
 
 /* ======== Booking ======== */
@@ -280,25 +304,22 @@ input, select {
 
 	.form-control {
 		background: #fff;
+		color: #6D6E71
 	}
 
 	#bookForm span label {
 		display: block;
 		font-size: 1.5em;
 		font-weight: 400;
-		margin-top: 1em;
+		margin: .5em 0;
 	}
 
-	#bookForm select {
-		color: #6D6E71;
+	#bookForm select, #bookForm input, button {
+		margin-right: 1em;
 	}
 
 	#bookButtons {
 		margin-top: 2em;
-	}
-
-	button {
-		margin-right: .5em;
 	}
 
 	/* Datepicker Customer CSS */
@@ -491,6 +512,12 @@ input, select {
 		color: #F1F2F2;
 	}
 
+	/* Booking */
+
+	#bookButtons {
+		text-align: center;
+	}
+
 	/* Footer */
 
 	#credits,
@@ -520,6 +547,10 @@ input, select {
 	}
 
 	#mainnav ul li a{
-		font-size: .75em;
+		font-size: 1.5rem;
+	}
+
+	#bookForm {
+		text-align: center;
 	}
 }

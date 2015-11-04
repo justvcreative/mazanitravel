@@ -31,8 +31,8 @@
 						'<h4>Travelers</h4>' +
 						'<p>Adults: ' + adults + ' | Seniors: ' + seniors + '</p>' +
 				'</div>' +			
-				'<div id="confirmationButtons"><button type="button" id="confirmButton" class="btn btn-primary btn-lg">Confirm</button>' +
-				'<button type="button" id="cancelButton" class="btn btn-default btn-lg">Cancel</button></div><hr>' // Confirmation Buttons
+				'<div id="confirmationButtons"><button type="button" id="confirmButton" class="btn jumbo-btn btn-lg">Confirm</button>' +
+				'<button type="button" id="cancelButton" class="btn jumbo-default-btn btn-lg">Cancel</button></div><hr>' // Confirmation Buttons
 				);
 
 					$('#confirmButton').click(function () {
