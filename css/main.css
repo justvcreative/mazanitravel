@@ -97,9 +97,14 @@ input, select {
 
 /* ======== Global ======== */
 	
+	html {
+		height: 100%;
+	}
+
 	body {
 		font-family: 'PT Sans', Helvetica, Futura, sans-serif;
 		background: #F1F1F2;
+		height: 100%;
 	}
 	
 	a:link {
@@ -111,20 +116,6 @@ input, select {
 	}
 
 /* ======== Header ======== */
-	header {
-		position: relative;
-		-webkit-box-shadow: 0px 3px 5px 0px rgba(109,110,112,1);
-		-moz-box-shadow: 0px 3px 5px 0px rgba(109,110,112,1);
-		box-shadow: 0px 3px 5px 0px rgba(109,110,112,1);
-	}
-
-	#logo h1 {
-		width: 313px;
-		height: 62px;
-		margin-top: 20px;
-		background: url('../img/logo.png') left center no-repeat;
-		text-indent: -2000px;
-	}
 
 	/* Section Header */
 
@@ -140,61 +131,33 @@ input, select {
 		margin-bottom: 0;
 	}
 
-	#navigation {
-		margin-top: 3em;
+	.navbar-brand {
+		background: url('../img/logo.png') no-repeat center;
+		text-indent: -9999px;
+		width: 313px;
 	}
 
-	#mainnav ul li a:visited,
-	#mainnav ul li a:link{
-		color: #404041;
+	.nav {
+		margin-top: 1em;
 	}
 
-	#mainnav ul li {
-		font-size: 1.25em;
-		display: inline-block;
+	.nav li {
+		font-size: 2rem;
+		text-align: right;
+	}
+
+	.navbar-toggle {
+		border: none;
+		background: #27aae1;
+		color: #F1F1F2;
 	}
 	
-	#mainnav ul li a {
-		padding-right: .5em;
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		border: none;
+		background: #27aae1;
+		color: #F1F1F2;
 	}
 
-	#mainnav ul li a:hover {
-		background: transparent;
-		font-weight: 700;
-	}
-
-	/* Mobile Nav */
-
-	#mobilenav {
-		background: #F1F1F2;
-		text-align: center;
-	}
-
-	#mobilenav i {
-		color: #27A9E1;
-		font-size: 2em;
-		padding: .5em 0;
-	}
-
-	#mobilenav ul {
-		border-top: 1px solid #27AAE1;
-	}
-
-	#mobilenav ul li {
-		display: inline-block;
-		font-size: 1.5em;
-		padding: .5em 0;
-	}
-
-	#mobilenav ul li a,
-	#mobilenav ul li a:link,
-	#mobilenav ul li a:visited {
-		color: #27A9E1;
-	}
-
-	#mobilenav ul li a {
-		padding: 0;
-	}
 
 	/* Social Nav */
 
@@ -255,43 +218,55 @@ input, select {
 /* ======== Jumbotron ======== */
 
 	.jumbotron {
-		height: 900px;
-		background: #414142 url('../img/bg.jpg') top center no-repeat;
-		text-align: center;
+		height: 100%;
+		background: url('../img/bg.jpg') top center no-repeat;
 		background-size: cover;
-		margin-bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+	}
+
+	#hero {
+		color: #404041;
+		text-align: center;
+		background: rgba(189, 222, 143, 0.9); //HEX: #bdde8f
+		opacity: 0.8;
+		padding: 2em 0;
+		border-radius: .25em;
+	}
+
+	#hero h1 {
 		color: #404041;
 	}
 
-	.jumbotron h1 {
-		margin-top: 2em;
-		color: #404041;
-	}
-
-	.jumbotron h2, .jumbotron p {
+	#hero h2, #hero p {
 		margin: 1em;
-		color: #404041;
 	}
 
 	.jumbo-btn {
 		border: 1px solid #F7931D;
 		background: #F7931D;
 		color: #404041;
+		font-weight: bold;
 	}
 
 	.jumbo-btn:hover {
-		background: #D47608;
+		background: #F7931D;
 		color: #F1F1F2;
 	}
 
 	.jumbo-default-btn {
-		border: 1px solid #F7931D;
-		background: rgba(241, 241, 242, 0.9);
+		border: 1px solid #e4e4e6;
+		background: #e4e4e6;
 		color: #404041;
+		font-weight: bold;
 	}
 
 	.jumbo-default-btn:hover {
-		background: rgba(215, 215, 217, 0.9);
+		background: #fefefe;
+		border: 1px solid #F1F1F2;
+		color: #404041;
 	}
 
 /* ======== Booking ======== */
@@ -352,21 +327,41 @@ input, select {
 	#confirm {
 		background: #fff;
 		margin: 2em 0;
-		text-align: center;
+		position: relative;
 	}
 
-	#confirm h2, #confirm h3 {
+	#confirmIMG {
+		padding: 0;
+		background: url('../img/resortconfirm.jpg') no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 100%;
+		position: absolute;
+	}
+
+	#confirmMSG {
+		float: right;
+		padding-bottom: 2em;
+	}
+
+	#confirmMSG h2, #confirmMSG h3 {
 		font-weight: 700;
 		margin: .5em 0;
+		line-height: 1.25em;
 	}
 
-	#confirm h4 {
+	#confirmMSG h4 {
 		font-weight: 700;
 		margin: 1em 0;
 	}
 
 	#confirmationButtons {
 		margin: 2em 0;
+	}
+
+	.successMSG {
+		color: #8DC63F;
+		font-size: 2rem;
 	}
 
 	/* Ad */
@@ -378,38 +373,60 @@ input, select {
 
 /* ======== Destinations ======== */
 
-	#destinationsGallery {
-		margin-top: 2em;
-		margin-bottom: 2em;
+	#gallery {
+		display: block;
+		padding: 2em 0;
+		display: -ms-flexbox;
+		-ms-flex-wrap: wrap;
+		-ms-flex-direction: column;
+		-webkit-flex-flow: row wrap; 
+		flex-flow: row wrap; 
+		display: -webkit-box;
+		display: flex;
+		justify-content: center;
 	}
 
-	#destinationsGallery .photo {
-		background: #F7941E;
-		padding: 0;
+	.galleryLink {
+		max-width: 300px;
+		position: relative;
+		-webkit-box-flex: auto;
+  		-ms-flex: auto;
+  		flex: auto;
+  		padding: 0 .125em;
 	}
 
-	#destinationsGallery .caption {
+	.galleryLink img {
+		max-width: 100%;
+		border: 1px solid #F1F1F2;
+	}
+
+	.galleryLink img:hover {
+		border: 1px solid #27A9E1;
+	}
+
+	.galleryLink span {
 		position: absolute;
-		font-size: 3em;
-		font-weight: 700;
-		color: #F1F2F2;
-		padding: 2em .25em;
+		background: #F1F1F2;
+		width: 100%;
+		height: 20%;
+		padding: .25em 0 0 .5em;
+		bottom: 0;
+		text-align: left;
+		font-size: 3rem;
+		color: #404041;
+		opacity: 0.9;
 	}
-	
 
-	#destinationsGallery img {
-		opacity: 0.4;
-	}
-	
-	#destinationsGallery img:hover {
-		opacity: 1;
+	.galleryLink span:hover {
+		background: #27A9E1;
+		color: #F1F1F2;
 	}
 
 /* ======== Footer ======== */
 
 	footer {
 		background: #F7931D;
-		padding: 1em 0;
+		padding: 4em 0;
 		color: #F1F1F2;
 	}
 
@@ -454,9 +471,14 @@ input, select {
 
 	/* Header */
 
-	#logo h1 {
-		width: 62px;
-		margin: 1em auto 0;
+	.navbar-brand {
+		width: 60px;
+		background-position: left;
+		margin-left: 2em;
+	}
+
+	.nav li {
+		font-weight: bold;
 	}
 
 	.sectionHeader {
@@ -464,20 +486,6 @@ input, select {
 	}
 
 	/* Navigation */
-
-	#mobilenav ul li {
-		font-size: 1.25em;
-		display: block;
-	}
-
-	#navigation {
-		margin-top: 0;
-	}
-
-
-	#logo, #navigation {
-		float: none !important;
-	}
 
 	#footernav, #socialnav, #funfacts, #attractions, #package {
 		margin-top: 1em;
@@ -495,33 +503,43 @@ input, select {
 
 	/* Jumbotron */
 
-	.jumbotron {
-		height: 600px;
+	#hero {
+		padding: 1.125em .75em;
 	}
 
-	.jumbotron h1 {
+	#hero h1 {
 		font-size: 2em;
 	}
 
-	.jumbotron h2 {
-		font-size: 1.5em;
+	#hero h2 {
+		font-size: 1.25em;
+	}
+
+	#hero p {
+		font-size: 1.25rem;
 	}
 
 	/* Destinations */
-
-	#destinationsGallery {
-		margin-bottom: 0;
-	}
-
-	#destinationsGallery .caption {
-		font-size: 2em;
-		color: #F1F2F2;
-	}
 
 	/* Booking */
 
 	#bookButtons {
 		text-align: center;
+	}
+
+	#confirmMSG {
+		text-align: center;
+		float: none;
+	}
+
+	.successMSG {
+		font-size: 1.6rem;
+	}
+
+	#confirmIMG {
+		position: relative;
+		height: 400px;
+		background-position: right center;
 	}
 
 	/* Footer */
@@ -548,15 +566,32 @@ input, select {
 }
 
 @media only screen and ( min-width: 768px) and ( max-width: 990px) {
-	#logo h1 {
-		background-size: 75%;
-	}
-
-	#mainnav ul li a{
-		font-size: 1.5rem;
-	}
 
 	#bookForm {
 		text-align: center;
+	}
+
+	.navbar-brand {
+		background-size: 75%;
+	}
+
+	.nav li {
+		font-size: 1.5rem;
+	}
+
+	#confirmMSG h2 {
+		font-size: 2.25rem;
+	}
+
+	#confirmMSG h3 {
+		font-size: 2rem
+	}
+
+	#confirmMSG h4 {
+		font-size: 1.75rem
+	}
+
+	#confirmMSG p {
+		font-size: 1.75rem
 	}
 }

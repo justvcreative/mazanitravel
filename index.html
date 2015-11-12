@@ -20,47 +20,40 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<header class="navbar navbar-default clearfix">
-			<div class="container">
-				<!-- Logo -->
-				<div id="logo" class="pull-left">
-					<a href="index.html"><h1>Mazani Travel</h1></a>
-				</div>
-				<!-- Navigation -->
-				<div id="navigation" class="pull-right">
-					<nav id="mainnav" class="collapse navbar-collapse">
-						<ul class="nav">
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+							<span class="sr-only">Toggle Navigation</span>
+							<span class="fa fa-bars fa-2x"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">MazaniTravel</a>
+					</div>
+					<div class="collapse navbar-collapse navbar-right" id="navigation">
+						<ul class="nav navbar-nav">
 							<li><a href="#booking">Book</a></li>
 							<li><a href="#">Specials</a></li>
-							<li><a href="#destinations">Destinations</a></li>
+							<li><a href="#destinations">Destinations</a></li>					
 							<li><a href="#">About</a></li>
 							<li><a href="#">FAQ</a></li>
 						</ul>
-					</nav>
-					<nav id="mobilenav" class="hidden-sm hidden-md hidden-lg">
-						<a href="#" id="switch"><i class="fa fa-bars"></i></a>
-
-						<ul id="navlist" class="nav">
-							<li><a href="#booking">Book</a></li>
-							<li><a href="#">Specials</a></li>
-							<li><a href="#destinations">Destinations</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">FAQ</a></li>
-						</ul>
-					</nav>
+					</div>
 				</div>
-			</div>
+			</nav>
 		</header>
 		<!-- Jumbotron -->
 		<div class="jumbotron">
 			<div class="container">
-				<h1>Brazillian Adventure</h1>
-				<h2>Save 15% on your trip to Brazil</h2>
-				<div id="offerButtons">
-					<a href="#booking" class="btn btn-lg jumbo-btn">Book Now!</a>
-					<a href="#" class="btn btn-lg jumbo-default-btn">Learn More</a>
+				<div id="hero">
+					<h1>Brazillian Adventure</h1>
+					<h2 class="text-capitalize">Save <strong>15%</strong> on your trip to Brazil</h2>
+					<div id="offerButtons">
+						<a href="#booking" class="btn btn-lg jumbo-btn">Book Now!</a>
+						<a href="#" class="btn btn-lg jumbo-default-btn">Learn More</a>
+					</div>
+					<p>Book by 12/31/2015. Travel by 07/14/2016</p>
 				</div>
-				<p>Book by 12/31/2015. Travel by 07/14/2016</p>
 			</div>
 		</div>
 		<!-- Booking -->
@@ -143,15 +136,13 @@
 			<h2>Where Will You Venture Next?</h2>
 			<!-- Gallery -->
 			<div id="destinationsGallery" class="hidden-xs">
-				<div class="row">
-					<div class="photo col-sm-4"><h2 class="caption">Chile</h2><a href="chile.html"><img src="img/santiago.jpg" alt="Santiago, Chile" class="img-responsive"></a></div>
-					<div class="photo col-sm-4"><h2 class="caption">Argentina</h2><a href="argentina.html"><img src="img/buenosaires.jpg" alt="Buenos Aires, Argentina" class="img-responsive"></a></div>
-					<div class="photo col-sm-4"><h2 class="caption">Puerto Rico</h2><a href="puertorico.html"><img src="img/sanjuan.jpg" alt="San Juan, Puerto Rico" class="img-responsive"></a></div>
-				</div>
-				<div class="row">
-					<div class="photo col-sm-4"><h2 class="caption">Brazil</h2><a href="brazil.html"><img src="img/riodejaneiro.jpg" alt="Rio de Janeiro, Brazil" class="img-responsive"></a></div>
-					<div class="photo col-sm-4"><h2 class="caption">Peru</h2><a href="peru.html"><img src="img/lima.jpg" alt="Lima, Peru" class="img-responsive"></a></div>
-					<div class="photo col-sm-4"><h2 class="caption">Venezuela</h2><a href="venezuela.html"><img src="img/barcelona.jpg" alt="Barcelona, Venezuela<" class="img-responsive"></a></div>
+				<div id="gallery">
+					<div class="galleryLink"><a href="chile.html"><span>Chile</span><img src="img/chile.jpg" alt="Chile"></a></div>
+					<div class="galleryLink"><a href="argentina.html"><span>Argentina</span><img src="img/argentina.jpg"alt="Argentina"></a></div>
+					<div class="galleryLink"><a href="puertorico.html"><span>Puerto Rico</span><img src="img/puertorico.jpg" alt="Puerto Rico"></a></div>
+					<div class="galleryLink"><a href="brazil.html"><span>Brazil</span><img src="img/brazil.jpg" alt="Brazil"></a></div>
+					<div class="galleryLink"><a href="peru.html"><span>Peru</span><img src="img/peru.jpg" alt="Peru"></a></div>
+					<div class="galleryLink"><a href="venezuela.html"><span>Venezuela</span><img src="img/venezuela.jpg" alt="Venezuela"></a></div>
 				</div>
 			</div>
 			<div id="desinationsLinks" class="hidden-sm hidden-md hidden-lg">
@@ -182,7 +173,7 @@
 								<ul>
 									<li><a href="#booking">Book</a></li>
 									<li><a href="#">Specials</a></li>
-									<li><a href="#destinations">Destinations</a></li>						
+									<li><a href="#destinations">Destinations</a></li>
 									<li><a href="#">About</a></li>
 									<li><a href="#">FAQ</a></li>
 								</ul>
