@@ -12,6 +12,7 @@ Cities you can travel to include:
 *Rio de Janeiro, Brazil
 *San Juan, Puerto Rico
 
-To view the Mazani Travel Site, click this [link](http://veronicarivera.github.io/mazanitravel/index.html)
+To view the Mazani Travel Site, click this 
+[link](http://justvcreative.github.io/mazanitravel/index.html)
 
 Feel free to follow me on Twitter and Instagram @justvcreative
