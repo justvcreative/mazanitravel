@@ -52,6 +52,10 @@ a {
     background:transparent;
 }
 
+a, button {
+	-webkit-transition: all .125s;
+}
+
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;
@@ -374,8 +378,6 @@ input, select {
 /* ======== Destinations ======== */
 
 	#gallery {
-		display: block;
-		padding: 2em 0;
 		display: -ms-flexbox;
 		-ms-flex-wrap: wrap;
 		-ms-flex-direction: column;
@@ -384,42 +386,50 @@ input, select {
 		display: -webkit-box;
 		display: flex;
 		justify-content: center;
+		margin: 4rem auto;
 	}
 
-	.galleryLink {
-		max-width: 300px;
+	figure {
+		margin: .5rem;
 		position: relative;
+		max-width: 300px;
+		display: block;
+		border: 5px solid white;
+		box-shadow: 0 0 4px rgba(0,0,0,.3);
 		-webkit-box-flex: auto;
   		-ms-flex: auto;
   		flex: auto;
-  		padding: 0 .125em;
+
 	}
 
-	.galleryLink img {
-		max-width: 100%;
-		border: 1px solid #F1F1F2;
-	}
-
-	.galleryLink img:hover {
-		border: 1px solid #27A9E1;
-	}
-
-	.galleryLink span {
+	figcaption {
 		position: absolute;
-		background: #F1F1F2;
+		top: 175px;
+		background: rgba(0,0,0,.4);
+		height: 100px;
+		color: white;
 		width: 100%;
-		height: 20%;
-		padding: .25em 0 0 .5em;
-		bottom: 0;
 		text-align: left;
-		font-size: 3rem;
-		color: #404041;
-		opacity: 0.9;
+		padding: 10px 25px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-0-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-transition: all .25s ease-in-out;
 	}
 
-	.galleryLink span:hover {
-		background: #27A9E1;
-		color: #F1F1F2;
+	figcaption h4 {
+		padding-top: 5px;
+	}
+
+	figure:hover figcaption {
+		top: 0;
+		height: 98%;
+		background: rgba(38,169,224,.4); /* Blue */
+	}
+
+	#gallery img {
+		width: 100%;
 	}
 
 /* ======== Footer ======== */
