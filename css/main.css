@@ -54,6 +54,9 @@ a {
 
 a, button {
 	-webkit-transition: all .125s;
+	-moz-transition: all .125s;
+	-o-transition: all .125s;
+	transition: all .125s;
 }
 
 /* change colours to suit your needs */
@@ -416,6 +419,9 @@ input, select {
 		-0-box-sizing: border-box;
 		box-sizing: border-box;
 		-webkit-transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		-0-transition: all .25s ease-in-out;
+		transition: all .25s ease-in-out;
 	}
 
 	figcaption h4 {
